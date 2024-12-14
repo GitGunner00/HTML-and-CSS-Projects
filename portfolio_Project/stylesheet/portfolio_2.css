@@ -11,6 +11,7 @@ body {
     line-height: 1.6;
 }
     /* INITIAL POPUP */
+/* CURRENTLY COMMENTED DUE TO THE NEEDED JAVASCRIPT BEING DISCLUDED CURRENTLY
 .popup {
     display: none; 
     position: fixed; 
@@ -61,6 +62,7 @@ h6 {
     text-decoration: none;
     cursor: pointer;
 }
+*/
 
 .Navbar {
     position: fixed;
