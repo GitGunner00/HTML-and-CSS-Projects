@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+}
+    /* INITIAL POPUP */
+.popup {
+    display: none; 
+    position: fixed; 
+    z-index: 1001; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.popup-content {
+    background-color: #121212;
+    margin: 15% auto;
+    padding: 20px;
+    border: 4px solid #888;
+    width: 80%;
+    max-width: 500px;
+    height:auto;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    font-weight:bold;
+}
+.popup-content h2, p {
+    cursor:default;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+h6 {
+    color:yellow;
+    font-weight:normal;
+}
+
+.close {
+    color: #ff0000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover, 
+.close:focus {
+    color: #c10000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.Navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+    height: auto;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    animation: moveNav 3.5s;
+}
+
+@keyframes moveNav {
+    from { left: -100vw; }
+    to { left: 0; }
+}
+
+.Navbar .txt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.Navbar .txt a {
+    width: auto;
+    height: auto;
+    margin: 5px 0;
+    flex-grow: 1;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    color: rgba(255, 0, 0, 0.8);
+    animation: moveNavText 7.0s;
+}
+
+@keyframes moveNavText {
+    from { top: -100vh; }
+    to { top: 0; }
+}
+
+.Navbar .txt a:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(255, 0, 0, 0.8);
+    transform: scale(1.05);
+    text-decoration: underline;
+    text-decoration-color: #c10000;
+}     
+
+.Navbar .txt a.active {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 0, 0, 1);
+    text-decoration: underline;
+}   
+
+#Home {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+#bg_video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: none;
+}
+
+.Video_Text {
+    cursor: default;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.Video_Text h1 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(255, 0, 0, 1);
+    transition: transform 0.7s ease;
+}
+
+.Video_Text h1:hover {
+    transform: scale(1.08);
+}
+
+.Video_Text p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.Row {
+    font-family: "Times New Roman", Times, serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.Column_1, .Column_2 {
+    flex: 1;
+    padding: 15px;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: red;
+}
+
+a:hover {
+    color: white;
+}
+
+.Column_1 h1 {
+    font-size: 2rem;
+    text-shadow: 0px 3px 2px rgba(255, 0, 0, 1);
+    transition: transform 1.4s ease-in-out;
+}
+
+.Column_1 h1:hover {
+    transform: scale(1.1);
+}
+
+.center {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.Column_1 {
+    cursor: default;
+    text-align: center;
+}
+
+.Column_1 p {
+    font-size: 1rem;
+}
+
+.Column_2 img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.Column_tall {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#head_logo, #Code_, #Git {
+    border: 3px solid #fff;
+    border-radius: 50%;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    object-fit: cover;
+    transition: transform 1s ease-in-out;
+}
+
+#head_logo:hover, #Code_:hover, #Git:hover {
+    transform: scale(1.05);
+    filter: saturate(5);
+    border-color: #c10000;
+}
+
+#GitHub {
+    height: auto;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* CONTACT FORM STYLES */
+
+#Contact {
+    height: auto;
+}
+
+form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+form input[type="text"], form input[type="email"], textarea {
+    text-align: center;
+    font-size:1rem;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+}
+
+form input[type="text"]:hover, form input[type="email"]:hover, textarea:hover {
+    border-color: #c10000;
+}
+
+textarea {
+    height: 100px;
+    width: 100%;
+    max-width: 100%;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    max-width: 150px;
+    height: 40px;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 1px solid #c10000;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    border-color: #000000;
+    background-color:#c10000;
+    color:#000;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+label:hover {
+    text-decoration-color: #c10000;
+}
+
+/* FOOTER STYLES */
+
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* MOBILE VIEW ADJUSTMENTS */
+
+@media (max-width: 768px) {
+    .Navbar {
+        height: auto;
+    }
+
+    .Navbar .txt a {
+        font-size: 14px;
+    }
+
+    .Row {
+        flex-direction: column;
+    }
+
+    .Column_1, .Column_2 {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    #bg_video {
+        height: auto;
+        min-height: 300px;
+    }
+
+    .Video_Text {
+        padding: 10px;
+    }
+
+    .Video_Text h1 {
+        font-size: 1.5rem;
+    }
+
+    .Column_1 h1 {
+        font-size: 1.5rem;
+    }
+
+    #head_logo, #Code_, #Git {
+        max-width: 200px;
+    }
+}
