@@ -17,8 +17,7 @@ The "Space Resort Project" was the first major project of the course. It focused
 - Setting a **background image** and styling it with CSS properties like `background-size`, `background-position`, and `background-repeat`.
 
 ## Online Portfolio Website
-This was my first project, which has been made as a live webpage. Mainly used as a basic online portfolio, which will be updated, and changed durastically in due time.
-**This portfolio is still in development, and and more HTML pages will eventually be added, as well as many other changes.**
+This was my first project, which has been made as a live webpage. Mainly used as a basic online portfolio, which will be updated, and changed durastically in due time.    **This portfolio is still in development, and and more HTML pages will eventually be added, as well as many other changes.** These are the skills which were learned, and used on this project:
 
 - Applying **effects** on images, including hover states, and animations.
 - Created a **CSS** enhanced navigation bar for quick selection of website sections.
@@ -26,6 +25,7 @@ This was my first project, which has been made as a live webpage. Mainly used as
 - Set a **Background video** using the video element.
 
 ## Extra additions added in free time
+These files are **currently** not provided in this repository and are only in use on my live webpage.
   - Set up a **contact.php** file to allow the contact form to work.
   - utilized some very basic **JavaScript** files to add multiple useful features such as:
     1. A popup which appears immediately when the page loads.
