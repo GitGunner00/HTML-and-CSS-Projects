@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Home</title>
+    <link rel="stylesheet" href="stylesheet/portfolio_2.css">
+    <link rel="icon" href="media/photos/tab_icon.ico" type="image/x-icon">
+</head>
+
+<body class="Background">
+
+    <!-- INITIAL POPUP -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Welcome to my portfolio</h2>
+            <p>This page is currently being developed,
+                therefore there will be many changes to come!</p>
+            </p>
+            <br>
+            <h6>(Click anywhere to close)</h6>
+        </div>
+    </div>
+
+    <nav class="Navbar">
+        <div class="txt">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+        </div>
+    </nav>
+
+    <br><br>
+
+    <section id="Home">
+        <video autoplay muted loop id="bg_video">
+            <source src="media/video/background.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="Video_Text">
+            <h1 class="white-text">Gunner Skretting's Portfolio</h1>
+            <p class="center">
+                <q>
+                    <i>The best programs are written so that computing machines can perform them quickly, 
+                    and so that human beings can understand them clearly. A programmer is ideally an essayist 
+                    who works with traditional aesthetic and literary forms as well as mathematical concepts 
+                    to communicate the way that an algorithm works, and to convince a reader that the results 
+                    will be correct.</i>
+                </q>
+                <br>- Donald E. Knuth
+                <br><br><strong>My name is Gunner. Welcome to my portfolio website. 
+                <br>Here, I will tell you about my background and experience. 
+                <br>Thank you for stopping by!</strong>
+            </p>
+        </div>
+    </section>
+
+    <section id="About" class="Row">
+        <div class="Column_2">
+            <img src="media/video/gif/intro.gif" id="Code_" alt="code gif">
+        </div>
+        <div class="Column_1">
+            <h1>About</h1>
+            <p>
+                I am a Software and Web Development student at 
+                <a href="https://www.academyoflearning.com/" target="_blank">The Academy of Learning</a>, set to graduate in 2025. 
+                My passion for technology began in high school, where I took a Computer Science class and developed simple 8-bit video games. 
+                Now, I am focused on building a career in software development, with plans to eventually launch my own company.
+            </p>
+        </div>
+    </section>
+
+    <section id="GitHub" class="Row">
+        <div class="Column_1">
+            <div class="center">
+                <h1>GitHub</h1>
+                <p>
+                    Here is a link to my personal GitHub profile. 
+                    <br>My profile is a composition of various coding projects from college.
+                    <a href="https://github.com/GitGunner00" target="_blank">My GitHub</a>
+                </p>
+            </div>
+        </div>
+        <div class="Column_2">
+            <a href="https://github.com/GitGunner00" target="_blank">
+                <img src="media/photos/GitHub.png" id="Git" alt="GitHub Logo">
+            </a>
+        </div>
+    </section>
+
+    <section id="Contact" class="Row">
+        <div class="Column_2 Column_tall">
+            <img src="media/photos/head_logo.png" id="head_logo" alt="Contact Image">
+        </div>
+        <div class="Column_1 Column_tall">
+            <h1 class="conh1">Contact</h1>
+            <form action="contact.php" method="POST">
+                <label for="Name">Name:</label>
+                <input type="text" id="Name" name="Name" placeholder="Please enter your name here">
+                <label for="Email">Email:</label>
+                <input type="email" id="Email" name="Email" placeholder="Please enter your email here">
+                <label for="Message">Message:</label>
+                <textarea id="Message" name="Message" placeholder="Please write your message here"></textarea>
+                <input type="submit" value="SUBMIT">
+            </form>
+        </div>
+    </section>
+
+    <footer class="Fa">
+        <p class="pfoot">
+            &copy; <strong>G. Skretting Portfolio</strong> | 
+            <a href="https://gskretting-personal.io/#home" target="_blank">My Home Page</a>
+        </p>
+    </footer>
+
+        <!-- JavaScript Test Scripts-->
+       
+        <script src="scripts/popup.js"></script>
+        <script src="scripts/animate.js"></script>
+        <script src="scripts/scripts.js"></script>
+        <script src="scripts/nav.js"></script>
+
+    </body>
+</html>
