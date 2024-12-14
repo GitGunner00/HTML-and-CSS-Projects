@@ -23,8 +23,9 @@ This was my first project, which has been made as a live webpage. Mainly used as
 - Applying **effects** on images, including hover states, and animations.
 - Created a **CSS** enhanced navigation bar for quick selection of website sections.
 - Used **FlexBoxes** to create an alternating, and in-depth look.
-- Set a **Background video** using the <video> element.
-      **Extra additions done in spare time**
+- Set a **Background video** using the video element.
+
+## Extra additions added in free time
   - Set up a **contact.php** file to allow the contact form to work.
   - utilized some very basic **JavaScript** files to add multiple useful features such as:
     1. A popup which appears immediately when the page loads.
